@@ -16,7 +16,7 @@ The system follows a Client-Server architecture to ensure separation of concerns
 
 To ensure a robust decoupled architecture, the following sequence diagrams illustrate the communication between the Vanilla JS client and the Spring Boot backend.
 
-### Case Diagram
+### Use Case Diagram
 
 ```mermaid
 graph LR
@@ -72,7 +72,7 @@ sequenceDiagram
     Front->>Front: Trigger timeout (AbortController)
     Front-->>User: Display "Server is taking too long to respond. Try again."
 ```
-### 2. Data Conflict
+### 3. Data Conflict
 ```mermaid
 
 sequenceDiagram
