@@ -1,0 +1,14 @@
+server/target/
+server/src/main/resources/application.properties
+.idea/
+*.class
+*.jar
+*.war
+
+*.iml
+.project
+.settings/
+.classpath
+
+.env*
+warmup.js
