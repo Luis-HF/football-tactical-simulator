@@ -1,4 +1,4 @@
-package com.example.back21.entities;
+package com.tacticalsoccer.models;
 
 import jakarta.persistence.*;
 import lombok.*;

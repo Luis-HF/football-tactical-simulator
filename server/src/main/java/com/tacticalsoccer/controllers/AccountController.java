@@ -1,8 +1,8 @@
-package com.example.back21.controller;
+package com.tacticalsoccer.controllers;
 
-import com.example.back21.service.AccountService;
-import com.example.back21.dto.AccountRequestDTO;
-import com.example.back21.dto.AccountResponseDTO;
+import com.tacticalsoccer.services.AccountService;
+import com.tacticalsoccer.dto.AccountRequestDTO;
+import com.tacticalsoccer.dto.AccountResponseDTO;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

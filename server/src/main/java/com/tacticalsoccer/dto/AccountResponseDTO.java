@@ -1,4 +1,4 @@
-package com.example.back21.dto;
+package com.tacticalsoccer.dto;
 
 public record AccountResponseDTO(
         Long id,

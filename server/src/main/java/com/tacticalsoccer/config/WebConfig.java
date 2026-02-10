@@ -1,4 +1,4 @@
-package com.example.back21.config;
+package com.tacticalsoccer.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

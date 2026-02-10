@@ -1,4 +1,4 @@
-package com.example.back21.dto;
+package com.tacticalsoccer.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Email;

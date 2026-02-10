@@ -1,6 +1,6 @@
-package com.example.back21.repositories; //package padrao
+package com.tacticalsoccer.repositories; //package padrao
 
-import com.example.back21.entities.Account;
+import com.tacticalsoccer.models.Account;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

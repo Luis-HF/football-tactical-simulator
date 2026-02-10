@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db422e4f-5794-43f6-9fa2-2317dfe7174a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/football-tactical-simulator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/back21/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a70a9c0-a4d8-451c-81f9-d046fb17e425.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a70a9c0-a4d8-451c-81f9-d046fb17e425/storage_v2/_src_/database/simulador_db.qfRX3A.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a70a9c0-a4d8-451c-81f9-d046fb17e425/storage_v2/_src_/database/simulador_db.qfRX3A/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a70a9c0-a4d8-451c-81f9-d046fb17e425/storage_v2/_src_/database/simulador_db.qfRX3A/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7a70a9c0-a4d8-451c-81f9-d046fb17e425/storage_v2/_src_/database/simulador_db.qfRX3A/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/exceptions/EmailAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/exceptions/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/back21/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/ServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/back21/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/back21/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/controllers/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/back21/dto/AccountRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/dto/AccountRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/back21/dto/AccountResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/dto/AccountResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/back21/entities/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/models/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/back21/repositories/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/repositories/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/back21/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/services/AccountService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +89,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tacticalsoccer" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationStatuses">
       <map>
@@ -146,7 +150,8 @@
       <option name="presentableId" value="Default" />
       <updated>1770687899725</updated>
       <workItem from="1770687902724" duration="6203000" />
-      <workItem from="1770700646264" duration="1421000" />
+      <workItem from="1770700646264" duration="2406000" />
+      <workItem from="1770733004572" duration="4708000" />
     </task>
     <servers />
   </component>

@@ -1,9 +1,9 @@
-package com.example.back21.service;
+package com.tacticalsoccer.services;
 
-import com.example.back21.dto.AccountRequestDTO;
-import com.example.back21.dto.AccountResponseDTO;
-import com.example.back21.entities.Account;
-import com.example.back21.repositories.AccountRepository;
+import com.tacticalsoccer.dto.AccountRequestDTO;
+import com.tacticalsoccer.dto.AccountResponseDTO;
+import com.tacticalsoccer.models.Account;
+import com.tacticalsoccer.repositories.AccountRepository;
 
 import org.springframework.stereotype.Service;
 
