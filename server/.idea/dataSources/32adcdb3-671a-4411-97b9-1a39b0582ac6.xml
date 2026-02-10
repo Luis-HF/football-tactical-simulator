@@ -11,7 +11,7 @@
 4||10|c|G
 4||10|C|G
 4||10|T|G</Grants>
-      <IntrospectionStateNumber>771</IntrospectionStateNumber>
+      <IntrospectionStateNumber>773</IntrospectionStateNumber>
       <ServerVersion>18.1</ServerVersion>
       <StartupTime>1770684653</StartupTime>
       <TimeZones>true ACDT
@@ -1413,7 +1413,7 @@ false posixrules
 13332||10|C|G
 13332||-9223372036854775808|U|G
 13332||10|U|G</Grants>
-      <IntrospectionStateNumber>771</IntrospectionStateNumber>
+      <IntrospectionStateNumber>773</IntrospectionStateNumber>
       <ObjectId>16388</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4929,11 +4929,11 @@ false posixrules
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>771</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>771</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>771</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>773</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>773</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>773</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-02-10.01:01:39</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-02-10.02:02:26</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>545</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
