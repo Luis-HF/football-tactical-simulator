@@ -1,0 +1,8 @@
+{
+  "detail": "Não foi possível processar a operação devido a uma falha de conexão com o banco.",
+  "instance": "/api/v1/accounts",
+  "status": 503,
+  "title": "Serviço de Dados Indisponível",
+  "error_code": "INFRA_DATABASE_OFFLINE",
+  "timestamp": "2026-02-10T23:03:17.853565716Z"
+}

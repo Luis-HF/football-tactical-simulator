@@ -1,5 +1,141 @@
 POST http://localhost:8080/api/v1/accounts
 Content-Type: application/json
+Content-Length: 102
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "coach_pro",
+  "email": "contato@tacticsoccer.com",
+  "password": "senha_segura_123"
+}
+
+<> 2026-02-10T200424.503.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 102
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "coach_pro",
+  "email": "contato@tacticsoccer.com",
+  "password": "senha_segura_123"
+}
+
+<> 2026-02-10T200317.503.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 102
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "coach_pro",
+  "email": "contato@tacticsoccer.com",
+  "password": "senha_segura_123"
+}
+
+<> 2026-02-10T195717.409.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 101
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "coach_",
+  "email": "contato@tacticalsoccer.com",
+  "password": "senha_segura_123"
+}
+
+<> 2026-02-10T195641.409.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 104
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "coach_pro",
+  "email": "contato@tacticalsoccer.com",
+  "password": "senha_segura_123"
+}
+
+<> 2026-02-10T195613.409.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 104
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "coach_pro",
+  "email": "contato@tacticalsoccer.com",
+  "password": "senha_segura_123"
+}
+
+<> 2026-02-10T193543.500.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 104
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "coach_pro",
+  "email": "contato@tacticalsoccer.com",
+  "password": "senha_segura_123"
+}
+
+<> 2026-02-10T193527.201.json
+
+###
+
+POST http://localhost:8080/accounts
+Content-Type: application/json
+Content-Length: 93
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "gabriel_dev",
+  "email": "gabriel@test.com",
+  "password": "PGDoLHFS_2025"
+}
+
+<> 2026-02-10T193410.404.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
 Content-Length: 86
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
 Accept-Encoding: br, deflate, gzip, x-gzip
