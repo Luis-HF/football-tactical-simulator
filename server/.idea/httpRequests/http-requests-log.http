@@ -1,5 +1,515 @@
 POST http://localhost:8080/api/v1/accounts
 Content-Type: application/json
+Content-Length: 116
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T180112.409.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 116
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T180105.409.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 116
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T180103.409.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 116
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T180056.409.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 116
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T180050.409.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 116
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T180044.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 118
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T180036.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 120
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T180026.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 122
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T180018.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 124
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T180009.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 126
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175944.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 128
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175935.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175932.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 132
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175927.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 134
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175922.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 136
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175917.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 138
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175913.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 140
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175909.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 142
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175904.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 144
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175859.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 146
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175853.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 148
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175847.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 150
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSAAAAAAAAAAAAAAAAAAAAAAAAAAAAS",
+    "email": "IRAAAAAAAAAAAAAAAAAAAAAAAAIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175840.400.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 98
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSS",
+    "email": "IRIEU@IRSSI.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175826.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 100
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INSSS",
+    "email": "IRIEU@IRSSIU.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175820.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 102
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INESSS",
+    "email": "IRIEU@IRSSSIU.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175814.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 96
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "INE",
+    "email": "IRIEU@IRIU.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175804.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 98
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "IRNE",
+    "email": "IRINEU@IRIU.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175757.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 100
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "IRINE",
+    "email": "IRINEU@IRINU.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175749.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
+Content-Length: 102
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "username": "IRINEU",
+    "email": "IRINEU@IRINEU.com",
+    "password": "IRINEUVCNAOSABENEMEU"
+}
+
+<> 2026-02-11T175634.201.json
+
+###
+
+POST http://localhost:8080/api/v1/accounts
+Content-Type: application/json
 Content-Length: 102
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.2
 Accept-Encoding: br, deflate, gzip, x-gzip

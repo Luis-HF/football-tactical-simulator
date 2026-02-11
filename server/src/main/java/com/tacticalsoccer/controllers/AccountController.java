@@ -2,7 +2,6 @@ package com.tacticalsoccer.controllers;
 
 import com.tacticalsoccer.services.AccountService;
 import com.tacticalsoccer.dto.AccountRequestDTO;
-import com.tacticalsoccer.dto.AccountResponseDTO;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,9 +19,9 @@ public class AccountController {
     }
 
     @PostMapping
-    public ResponseEntity<AccountResponseDTO> register(@Valid @RequestBody AccountRequestDTO data) {
-        AccountResponseDTO response = accountService.createAccount(data);
+    public ResponseEntity<Void> register(@Valid @RequestBody AccountRequestDTO data) {
+        accountService.createAccount(data);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 }

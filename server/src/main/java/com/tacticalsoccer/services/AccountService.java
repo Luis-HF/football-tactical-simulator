@@ -1,7 +1,6 @@
 package com.tacticalsoccer.services;
 
 import com.tacticalsoccer.dto.AccountRequestDTO;
-import com.tacticalsoccer.dto.AccountResponseDTO;
 import com.tacticalsoccer.models.Account;
 import com.tacticalsoccer.repositories.AccountRepository;
 import org.springframework.stereotype.Service;
@@ -16,7 +15,7 @@ public class AccountService {
         this.repository = repository;
     }
 
-    public AccountResponseDTO createAccount(AccountRequestDTO data) {
+    public void createAccount(AccountRequestDTO data) {
 
         if (repository.existsByEmail(data.email())) {
             throw new ResourceConflictException("O e-mail informado já está em uso.");
@@ -30,11 +29,5 @@ public class AccountService {
         account.setPassword(data.password());
 
         Account accountSaved = repository.save(account);
-
-        return new AccountResponseDTO(
-                accountSaved.getId(),
-                accountSaved.getUsername(),
-                accountSaved.getEmail()
-        );
     }
 }

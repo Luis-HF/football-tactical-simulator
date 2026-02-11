@@ -1,4 +1,4 @@
-package com.tacticalsoccer.repositories; //package padrao
+package com.tacticalsoccer.repositories;
 
 import com.tacticalsoccer.models.Account;
 
