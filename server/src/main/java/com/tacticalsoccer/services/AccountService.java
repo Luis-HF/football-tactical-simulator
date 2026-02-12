@@ -28,6 +28,6 @@ public class AccountService {
         account.setEmail(data.email());
         account.setPassword(data.password());
 
-        Account accountSaved = repository.save(account);
+        repository.save(account);
     }
 }

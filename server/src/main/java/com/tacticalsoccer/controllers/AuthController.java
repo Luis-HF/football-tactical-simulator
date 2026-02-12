@@ -1,4 +1,4 @@
-//package com.tacticalsoccer.controllers;
+package com.tacticalsoccer.controllers;
 
 import com.tacticalsoccer.services.AuthService;
 import com.tacticalsoccer.dto.AuthRequestDTO;
@@ -10,18 +10,18 @@ import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
 ;
 
-//@RestController
-//@RequestMapping("/api/v1/auth/login")
-//public class AuthController {
+@RestController
+@RequestMapping("/api/v1/auth/login")
+public class AuthController {
 
-    //private final AuthService authService;
+    private final AuthService authService;
 
-    //public AuthController (AuthService authService){this.authService=authService;}
+    public AuthController (AuthService authService){this.authService=authService;}
 
-    //@PostMapping
-    //public ResponseEntity<AuthResponseDTO> login (@Valid @RequestBody AuthRequestDTO data){
-        //AuthResponseDTO response = authService.authLogin(data);
+    @PostMapping
+    public ResponseEntity<AuthResponseDTO> login (@Valid @RequestBody AuthRequestDTO data){
+        AuthResponseDTO response = authService.authLogin(data);
 
-        //return ResponseEntity.status(HttpStatus.OK).body(response);
-    //}
-//}
+        return ResponseEntity.status(HttpStatus.OK).body(response);
+    }
+}
