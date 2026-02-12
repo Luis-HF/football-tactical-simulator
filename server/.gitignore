@@ -1,2 +1,17 @@
 /target/
 /.idea/
+*.class
+*.jar
+*.war
+
+.idea/
+*.iml
+.vscode/
+.project
+.settings/
+.classpath
+
+.env
+src/main/resources/application-local.properties
+application.properties
+warmup.js
