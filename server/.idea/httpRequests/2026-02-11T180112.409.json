@@ -1,8 +1,0 @@
-{
-  "detail": "O e-mail informado já está em uso.",
-  "instance": "/api/v1/accounts",
-  "status": 409,
-  "title": "Conflito de Identidade",
-  "error_code": "AUTH_RESOURCE_ALREADY_EXISTS",
-  "timestamp": "2026-02-11T21:01:12.913461168Z"
-}

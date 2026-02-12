@@ -1,8 +1,0 @@
-{
-  "detail": "O nome de usuário informado já está em uso.",
-  "instance": "/api/v1/accounts",
-  "status": 409,
-  "title": "Conflito de Identidade",
-  "error_code": "AUTH_RESOURCE_ALREADY_EXISTS",
-  "timestamp": "2026-02-10T22:57:17.515053363Z"
-}

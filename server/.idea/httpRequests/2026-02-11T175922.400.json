@@ -1,6 +1,0 @@
-{
-  "timestamp": "2026-02-11T20:59:22.314Z",
-  "status": 400,
-  "error": "Bad Request",
-  "path": "/api/v1/accounts"
-}
