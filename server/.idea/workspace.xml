@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db422e4f-5794-43f6-9fa2-2317dfe7174a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/repositories/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/repositories/AccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/services/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/services/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/services/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tacticalsoccer/controllers/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tacticalsoccer/controllers/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tacticalsoccer/repositories/AccountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tacticalsoccer/repositories/AccountRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/exceptions/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tacticalsoccer/exceptions/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tacticalsoccer/services/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tacticalsoccer/services/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tacticalsoccer/services/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tacticalsoccer/services/AuthService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +52,7 @@
     "HTTP Request.All in scratch_5.executor": "Run",
     "HTTP Request.All in scratch_6.executor": "Run",
     "HTTP Request.All in scratch_7.executor": "Run",
+    "HTTP Request.All in scratch_8.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -106,16 +102,16 @@
         <entry key="HttpClient.HttpRequestRunConfigurationType">
           <value>
             <map>
-              <entry key="All in scratch_5" value="STOPPED" />
               <entry key="All in scratch_6" value="STOPPED" />
               <entry key="All in scratch_7" value="STOPPED" />
+              <entry key="All in scratch_8" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.All in scratch_7">
+  <component name="RunManager" selected="HTTP Request.All in scratch_8">
     <configuration name="ServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tacticalsoccer.ServerApplication" />
       <module name="back21" />
@@ -129,13 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in scratch_5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.http">
-      <method v="2" />
-    </configuration>
     <configuration name="All in scratch_6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.http">
       <method v="2" />
     </configuration>
     <configuration name="All in scratch_7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="All in scratch_8" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/scratch_8.http">
       <method v="2" />
     </configuration>
     <configuration name="ServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -160,8 +156,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.All in scratch_7" />
+        <item itemvalue="HTTP Request.All in scratch_8" />
         <item itemvalue="Spring Boot.ServerApplication (1)" />
+        <item itemvalue="HTTP Request.All in scratch_7" />
         <item itemvalue="HTTP Request.All in scratch_6" />
         <item itemvalue="Application.ServerApplication" />
       </list>
@@ -185,7 +182,7 @@
       <workItem from="1770687902724" duration="6203000" />
       <workItem from="1770700646264" duration="2406000" />
       <workItem from="1770733004572" duration="12345000" />
-      <workItem from="1770842938116" duration="10891000" />
+      <workItem from="1770842938116" duration="15356000" />
     </task>
     <servers />
   </component>

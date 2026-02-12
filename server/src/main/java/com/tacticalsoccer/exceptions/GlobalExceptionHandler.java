@@ -33,4 +33,6 @@ public class GlobalExceptionHandler {
                 "AUTH_RESOURCE_ALREADY_EXISTS"
         );
     }
+
+    //@ExceptionHandler()
 }
