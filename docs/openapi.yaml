@@ -1,0 +1,54 @@
+openapi: 3.0.3
+info:
+  title: Tactical Soccer API
+  description: Backend management API for the tactical football simulator.
+  version: 1.0.0
+
+paths:
+  /api/v1/accounts:
+    post:
+      summary: Register a new user account.
+      tags:
+        - Accounts
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccountRequest'
+      responses:
+        '201':
+          description: Account created successfully.
+        '400':
+          description: Bad Request. Validation failure or malformed JSON syntax.
+        '409':
+          description: Conflict. Username or Email already registered in the system.
+        '503':
+          description: Service Unavailable. Database connection failure.
+
+components:
+  schemas:
+    AccountRequest:
+      type: object
+      required:
+        - username
+        - email
+        - password
+      properties:
+        username:
+          type: string
+          maxLength: 20
+          description: Unique username for the account.
+          example: "luis_chad"
+        email:
+          type: string
+          format: email
+          description: Valid and unique email address.
+          example: "luis@example.com"
+        password:
+          type: string
+          format: password
+          minLength: 10
+          maxLength: 20
+          description: Account password. Security requirement of 10-20 characters.
+          example: "militar_rigor_123"
