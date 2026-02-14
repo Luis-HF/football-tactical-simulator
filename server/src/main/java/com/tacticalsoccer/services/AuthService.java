@@ -1,11 +1,10 @@
 package com.tacticalsoccer.services;
 
 import com.tacticalsoccer.dto.AuthResponseDTO;
-import com.tacticalsoccer.models.Account;
+import com.tacticalsoccer.exceptions.InvalidCredentialsException;
 import com.tacticalsoccer.repositories.AccountRepository;
 import org.springframework.stereotype.Service;
 import com.tacticalsoccer.dto.AuthRequestDTO;
-import com.tacticalsoccer.exceptions.ResourceConflictException;
 
 @Service
 public class AuthService {
@@ -16,6 +15,6 @@ public class AuthService {
         return repository.findByUsername(data.username())
                 .filter(user -> user.getPassword().equals(data.password()))
                 .map(user -> new AuthResponseDTO(user.getId(), user.getUsername()))
-                .orElseThrow(() -> new ResourceConflictException("Credenciais incorretas."));
+                .orElseThrow(() -> new InvalidCredentialsException("User or password invalid."));
     }
 }
