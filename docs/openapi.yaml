@@ -1,0 +1,106 @@
+openapi: 3.0.3
+info:
+  title: Tactical Soccer API
+  description: Backend management API for the tactical football simulator.
+  version: 1.0.0
+
+paths:
+  /api/v1/accounts:
+    post:
+      summary: Register a new user account.
+      tags:
+        - Accounts
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccountRequest'
+      responses:
+        '201':
+          description: Account created successfully.
+        '400':
+          description: Bad Request. Validation failure or malformed JSON syntax.
+        '409':
+          description: Conflict. Username or Email already registered.
+
+  /api/v1/auth/login:
+    post:
+      summary: Authenticate a user.
+      tags:
+        - Authentication
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthRequest'
+      responses:
+        '200':
+          description: Authentication successful.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '401':
+          description: Unauthorized. Invalid username or password.
+
+components:
+  schemas:
+    AccountRequest:
+      type: object
+      required:
+        - username
+        - email
+        - password
+      properties:
+        username:
+          type: string
+          maxLength: 20
+          example: "luis_chad"
+        email:
+          type: string
+          format: email
+          example: "luis@example.com"
+        password:
+          type: string
+          format: password
+          minLength: 10
+          maxLength: 20
+          example: "militar_rigor_123"
+
+    AuthRequest:
+      type: object
+      required:
+        - username
+        - password
+      properties:
+        username:
+          type: string
+          maxLength: 20
+          example: "Luis__"
+        password:
+          type: string
+          format: password
+          minLength: 10
+          maxLength: 20
+          example: "militar_rigor_123"
+
+    AuthResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 220
+        username:
+          type: string
+          example: "Luis__"
+
+    ProblemDetail:
+      type: object
+      properties:
+        title: { type: string }
+        status: { type: integer }
+        detail: { type: string }
+        error_code: { type: string }
+        timestamp: { type: string, format: date-time }
