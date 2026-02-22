@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro | Tactical Soccer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="auth-container">
+  <div class="auth-image-2">
+    <h1>Crie sua Equipe</h1>
+  </div>
+
+  <div class="auth-form">
+    <a class="back-link" href="index.html">← Voltar para a Landing</a>
+
+    <h2>Cadastro</h2>
+    <p>Crie sua conta e entre no jogo</p>
+
+    <form id="registerForm">
+
+      <div class="input-group">
+        <label for="name">Nome</label>
+        <input id="name" type="text" required>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Senha</label>
+        <input id="password" type="password" required>
+      </div>
+
+      <button type="submit" class="btn submit-btn">
+        <span class="btn-text">Cadastrar</span>
+        <span class="spinner hidden"></span>
+      </button>
+
+    </form>
+  </div>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

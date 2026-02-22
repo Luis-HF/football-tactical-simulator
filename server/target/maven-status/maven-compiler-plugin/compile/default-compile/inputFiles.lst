@@ -1,0 +1,7 @@
+/home/lhfs/Projects/football-tactical-simulator/server/src/main/java/com/example/back21/ServerApplication.java
+/home/lhfs/Projects/football-tactical-simulator/server/src/main/java/com/example/back21/controller/AccountController.java
+/home/lhfs/Projects/football-tactical-simulator/server/src/main/java/com/example/back21/dto/AccountRequestDTO.java
+/home/lhfs/Projects/football-tactical-simulator/server/src/main/java/com/example/back21/dto/AccountResponseDTO.java
+/home/lhfs/Projects/football-tactical-simulator/server/src/main/java/com/example/back21/entities/Account.java
+/home/lhfs/Projects/football-tactical-simulator/server/src/main/java/com/example/back21/repositories/AccountRepository.java
+/home/lhfs/Projects/football-tactical-simulator/server/src/main/java/com/example/back21/service/AccountService.java
