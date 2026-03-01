@@ -20,9 +20,9 @@ if (loginForm) {
     spinner.classList.remove("hidden");
     text.textContent = "Entrando...";
 
-    try {
+   try {
 
-      const response = await fetch("http://localhost:8080/api/v1/auth/login", {
+      const response = await fetch("http://100.116.54.101:8080/api/v1/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -80,7 +80,7 @@ if (registerForm) {
 
     try {
 
-      const response = await fetch("http://localhost:8080/api/v1/accounts", {
+      const response = await fetch("http://100.116.54.101:8080/api/v1/accounts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
