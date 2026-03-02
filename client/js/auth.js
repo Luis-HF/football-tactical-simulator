@@ -43,11 +43,11 @@ if (loginForm) {
 
     } catch (error) {
       alert("Unable to connect to server.");
+    } finally {
+      button.disabled = false;
+      spinner.classList.add("hidden");
+      text.textContent = "Entrar";
     }
-
-    button.disabled = false;
-    spinner.classList.add("hidden");
-    text.textContent = "Entrar";
   });
 }
 
