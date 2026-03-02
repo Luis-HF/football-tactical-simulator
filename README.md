@@ -10,7 +10,7 @@ The system follows a Client-Server architecture to ensure separation of concerns
 
 - **Server (Backend):** Developed in Java with Spring Boot. It acts as the core engine, handling game logic, physics probability, and data persistence.
 - **Client (Frontend):** A lightweight implementation using Vanilla JavaScript, HTML5, and CSS3, focused on rendering the simulation and capturing user strategic inputs.
-- **Communication:** Integration is achieved through a RESTful API for administrative tasks (account management) and WebSockets (STOMP/SockJS) for real-time match synchronization.
+- **Communication:** Integration is achieved through a RESTful API for administrative tasks (account management).
 
 ## System Workflows
 
@@ -20,19 +20,16 @@ To ensure a robust decoupled architecture, the following sequence diagrams illus
 
 ```mermaid
 graph LR
+subgraph "Sprint 1: Account Management"
+
     User((User))
-    
-    subgraph "Sprint 1: Account Management"
+
         UC1(Register New Account)
         UC2(Authenticate / Login)
-        UC3(Update Account Details)
-        UC4(Delete Account)
     end
 
     User --> UC1
     User --> UC2
-    User --> UC3
-    User --> UC4
 ```
 
 ### 1. User Registration (Happy Path)
@@ -48,12 +45,11 @@ sequenceDiagram
     participant DB as PostgreSQL
 
     User->>Front: Input data & click Register
-    Front->>Back: fetch(POST /api/auth/register, JSON)
-    Back->>DB: INSERT INTO users (uuid, username, ...)
+    Front->>Back: fetch(POST /api/v1/accounts, JSON)
+    Back->>DB: INSERT INTO Accounts (uuid, username, ...)
     DB-->>Back: ACK + generated UUID
     Back-->>Front: HTTP 201 Created (JSON Body)
-    Front->>Front: Store UUID & Notify Success
-    Front->>User: Redirect to Login Screen
+    Front->>User: Notify Success and Redirect to Login Screen
 ```
 ### 2. Error by Latency
 ```mermaid
@@ -65,7 +61,7 @@ sequenceDiagram
     participant Back as Backend (Java/Spring)
 
     User->>Front: Input registration data
-    Front->>Back: fetch(POST /api/auth/register)
+    Front->>Back: fetch(POST /api/v1/accounts, JSON)
 
     Note over Front,Back: Request pending (Latency threshold exceeded)
 
@@ -83,18 +79,17 @@ sequenceDiagram
     participant DB as PostgreSQL
 
     User->>Front: Input registration data
-    Front->>Back: fetch(POST /api/auth/register, JSON)
-    Back->>DB: INSERT INTO users (email, username, ...)
+    Front->>Back: fetch(POST /api/v1/accounts, JSON)
+    Back->>DB: INSERT INTO Accounts (uuid, username, ...)
     DB-->>Back: Error: Unique constraint violation
     Back-->>Front: HTTP 409 Conflict (Error JSON Message)
-    Front-->>User: Display "This email/user is already registered."
+    Front-->>User: Display "This username/email is already registered."
 ```
 
 ## Tech Stack
 - **Backend:** Java 21, Spring Boot, Spring Data JPA, Spring Security.
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+).
 - **Database:** PostgreSQL.
-- **Real-time:** WebSockets for bidirectional communication.
 - **Project Management:** Git Flow, Kanban, and UML Modeling.
 
 ## MVP Scope
