@@ -5,12 +5,25 @@ Tactical Soccer Simulator is a web-based, real-time strategy game focused on the
 
 The project is designed as a full-stack application, emphasizing decoupled architecture, state synchronization, and professional software engineering workflows.
 
+## Project Roadmap & Sprint Log
+
+| Sprint | Status | Title & Core Focus | Completion |
+| :--- | :---: | :--- | :--- |
+| **01** | ✅ | User Authentication & Database Setup | Feb 01-Mar 02  2026 |
+| **02** | 🏗️ | Lobbies, Docker & Technical Debt | In Progress |
+
+> For a detailed breakdown of tasks and retrospectives, check the [Sprint Reports](./docs/sprints/) folder.
+
 ## Architecture
 The system follows a Client-Server architecture to ensure separation of concerns:
 
 - **Server (Backend):** Developed in Java with Spring Boot. It acts as the core engine, handling game logic, physics probability, and data persistence.
 - **Client (Frontend):** A lightweight implementation using Vanilla JavaScript, HTML5, and CSS3, focused on rendering the simulation and capturing user strategic inputs.
 - **Communication:** Integration is achieved through a RESTful API for administrative tasks (account management).
+
+##  UX/UI Design
+The interface and user flow were meticulously planned in Figma to ensure a strategic and intuitive experience.
+- [Link to Figma Project](https://www.figma.com/design/Uvjqu4GGMy0fXH5dlhr4Jw/Football-Simulator---Sprint-1---Design?node-id=0-1&p=f&t=6BZogxtkWC1aDU3S-0)
 
 ## System Workflows
 
@@ -85,6 +98,69 @@ sequenceDiagram
     Back-->>Front: HTTP 409 Conflict (Error JSON Message)
     Front-->>User: Display "This username/email is already registered."
 ```
+### 4. User Authenticate
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User
+    participant Front as Frontend (JS)
+    participant Back as Backend (Java/Spring)
+    participant DB as PostgreSQL
+
+    User->>Front: Input credentials & click Login
+    Front->>Back: fetch(POST /api/v1/auth/login, JSON)
+    Back->>DB: SELECT FROM Accounts WHERE username = ?
+    DB-->>Back: Account Data
+    Back->>Back: Validate Credentials
+    Back-->>Front: HTTP 200 OK
+    Front->>User: Redirect to Game Dashboard
+```
+### 5. Invalid Credentials
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User
+    participant Front as Frontend (JS)
+    participant Back as Backend (Java/Spring)
+    participant DB as PostgreSQL
+
+    User->>Front: Input wrong credentials
+    Front->>Back: fetch(POST /api/v1/auth/login, JSON)
+    Back->>DB: SELECT FROM Accounts...
+    DB-->>Back: Account not found OR password mismatch
+    Back-->>Front: HTTP 401 Unauthorized (Error Message)
+    Front-->>User: Display "Invalid username or password."
+```
+<h3 align="center">ENTITIES DIAGRAM</h3>
+
+```mermaid
+classDiagram
+
+    class Account {
+        +UUID uuid
+        +String username
+        +String email
+        +String password
+    }
+
+    class Lobby {
+        +UUID uuid
+        +String code
+        +String status
+        +int hgoals
+        +int ggoals
+        +DateTime start_date
+        +DateTime end_date
+    }
+
+    Account "1" -- "0..*" Lobby : hosts
+    Account "1" -- "0..*" Lobby : joins as guest
+```
+
+### Security Roadmap
+- [x] REST API Authentication flow.
+- [ ] **BCrypt Password Hashing** (Scheduled for Sprint 2).
+- [ ] JWT Stateless Authentication.
 
 ## Tech Stack
 - **Backend:** Java 21, Spring Boot, Spring Data JPA, Spring Security.
