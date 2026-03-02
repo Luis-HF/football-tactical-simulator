@@ -1,6 +1,4 @@
-// ========================================
 // LOGIN
-// ========================================
 
 const loginForm = document.getElementById("loginForm");
 
@@ -13,7 +11,7 @@ if (loginForm) {
   loginForm.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    const email = document.getElementById("email").value.trim();
+    const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value.trim();
 
     button.disabled = true;
@@ -22,16 +20,16 @@ if (loginForm) {
 
    try {
 
-      const response = await fetch("http://100.116.54.101:8080/api/v1/auth/login", {
+      const response = await fetch("http://localhost:8080/api/v1/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({ username, password })
       });
 
       if (!response.ok) {
-        alert("Invalid email or password");
+        alert("Invalid username or password");
         return;
       }
 
@@ -53,16 +51,11 @@ if (loginForm) {
   });
 }
 
-
-
-// ========================================
 // REGISTER
-// ========================================
 
 const registerForm = document.getElementById("registerForm");
 
 if (registerForm) {
-
   const button = registerForm.querySelector(".submit-btn");
   const spinner = registerForm.querySelector(".spinner");
   const text = registerForm.querySelector(".btn-text");
@@ -70,7 +63,7 @@ if (registerForm) {
   registerForm.addEventListener("submit", async function (e) {
     e.preventDefault();
 
-    const name = document.getElementById("name").value.trim();
+    const name = document.getElementById("username").value.trim();
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
 
@@ -79,49 +72,36 @@ if (registerForm) {
     text.textContent = "Cadastrando...";
 
     try {
-
-      const response = await fetch("http://100.116.54.101:8080/api/v1/accounts", {
+      const response = await fetch("http://localhost:8080/api/v1/accounts", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username: name, email, password })
       });
 
-      if (!response.ok) {
-        alert("User or password invalid.");
-        return;
+      switch (response.status) {
+        case 201:
+          alert("Cadastro realizado com sucesso!");
+          window.location.href = "login.html";
+          break;
+        case 409:
+          alert("Username ou Email já em uso.");
+          break;
+        case 400:
+          alert("Falha ao criar conta: Verifique os dados enviados.");
+          break;
+        default:
+          alert("Ocorreu um erro inesperado. Tente novamente.");
+          break;
       }
-
-      alert("Cadastro realizado com sucesso!");
-      window.location.href = "login.html";
-
     } catch (error) {
-      alert("Server unstable, please try again in a few moments.");
+      alert("Servidor instável ou sem conexão. Tente novamente em instantes.");
+    } finally {
+      button.disabled = false;
+      spinner.classList.add("hidden");
+      text.textContent = "Cadastrar";
     }
-
-    button.disabled = false;
-    spinner.classList.add("hidden");
-    text.textContent = "Cadastrar";
   });
 }
-
-
-
-// ========================================
-// LOGOUT
-// ========================================
-
-const logoutBtn = document.getElementById("logoutBtn");
-
-if (logoutBtn) {
-  logoutBtn.addEventListener("click", function () {
-    localStorage.clear();
-    window.location.href = "index.html";
-  });
-}
-
-
 
 // ========================================
 // PROTEÇÃO DE ROTA (GAME PAGE)
