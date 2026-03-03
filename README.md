@@ -12,7 +12,7 @@ The project is designed as a full-stack application, emphasizing decoupled archi
 | **01** | ✅ | User Authentication & Database Setup | Feb 01-Mar 02  2026 |
 | **02** | 🏗️ | Lobbies, Docker & Technical Debt | In Progress |
 
-> For a detailed breakdown of tasks and retrospectives, check the [Sprint Reports](./docs/sprints/) folder.
+> For a detailed breakdown of tasks and retrospectives, check the [Sprint Reports](https://github.com/Luis-HF/football-tactical-simulator/tree/develop/docs) folder.
 
 ## Architecture
 The system follows a Client-Server architecture to ensure separation of concerns:
