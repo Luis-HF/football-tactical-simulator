@@ -1,6 +1,7 @@
 server/target/
 server/src/main/resources/application.properties
 .idea/
+.vscode/
 *.class
 *.jar
 *.war
@@ -12,3 +13,4 @@ server/src/main/resources/application.properties
 
 .env*
 warmup.js
+.gitignore
