@@ -13,4 +13,3 @@ server/src/main/resources/application.properties
 
 .env*
 warmup.js
-.gitignore
