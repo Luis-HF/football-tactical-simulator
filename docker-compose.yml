@@ -1,0 +1,52 @@
+services:
+
+#frontend
+  frontend-soccer:
+    image: nginx:alpine
+    container_name: frontend_container
+    ports:
+      - "80:80"
+    volumes:
+      - ./client:/usr/share/nginx/html:ro
+    networks:
+      - soccer-network
+
+#db
+  db-postgre:
+    image: postgres:15-alpine
+    container_name: postgres_container
+    environment:
+      POSTGRES_DB: simulador_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - soccer-network
+
+  #backend
+  backend-spring:
+    build:
+      context: ./server
+    container_name: spring_container
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db-postgre
+    environment:
+      DB_IP: db-postgre
+      DB_PORT: 5432
+      DB_NAME: simulador_db
+      DB_USER: postgres
+      DB_PASSWORD: ${DB_PASSWORD}
+    networks:
+      - soccer-network
+
+networks:
+  soccer-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
