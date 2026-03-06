@@ -26,7 +26,7 @@ The interface and user flow were meticulously planned in Figma to ensure a strat
 - [Link to Figma Project](https://www.figma.com/design/Uvjqu4GGMy0fXH5dlhr4Jw/Football-Simulator---Sprint-1---Design?node-id=0-1&p=f&t=6BZogxtkWC1aDU3S-0)
 
 ## System Workflows
-To understand how the frontend communicates with the backend and handles edge cases (like latency or data conflicts), please refer to our [Detailed Workflows](x).
+To understand how the frontend communicates with the backend and handles edge cases (like latency or data conflicts), please refer to our [Detailed Workflows](https://github.com/Luis-HF/football-tactical-simulator/blob/feat/docker-config/docs/workflows.md).
 
 To ensure a robust decoupled architecture, the following sequence diagrams illustrate the communication between the Vanilla JS client and the Spring Boot backend.
 
