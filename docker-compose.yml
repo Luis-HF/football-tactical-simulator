@@ -29,8 +29,7 @@ services:
 
   #backend
   backend-spring:
-    build:
-      context: ./server
+    image: luishfd/soccer-backend:v1.0
     container_name: spring_container
     #ports:
     #  - "8080:8080"
