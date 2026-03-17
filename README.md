@@ -26,10 +26,11 @@ The interface and user flow were meticulously planned in Figma to ensure a strat
 - [Link to Figma Project](https://www.figma.com/design/Uvjqu4GGMy0fXH5dlhr4Jw/Football-Simulator---Sprint-1---Design?node-id=0-1&p=f&t=6BZogxtkWC1aDU3S-0)
 
 ## System Workflows
+To understand how the frontend communicates with the backend and handles edge cases (like latency or data conflicts), please refer to our [Detailed Workflows](https://github.com/Luis-HF/football-tactical-simulator/blob/feat/docker-config/docs/workflows.mdQ).
 
 To ensure a robust decoupled architecture, the following sequence diagrams illustrate the communication between the Vanilla JS client and the Spring Boot backend.
 
-### Use Case Diagram
+<h3 align="center">USE CASE DIAGRAM</h3>
 
 ```mermaid
 graph LR
@@ -45,92 +46,6 @@ subgraph "Sprint 1: Account Management"
     User --> UC2
 ```
 
-### 1. User Registration (Happy Path)
-This flow describes the successful creation of a new account and its persistence in PostgreSQL.
-
-```mermaid
-
-sequenceDiagram
-    autonumber
-    actor User
-    participant Front as Frontend (JS)
-    participant Back as Backend (Java/Spring)
-    participant DB as PostgreSQL
-
-    User->>Front: Input data & click Register
-    Front->>Back: fetch(POST /api/v1/accounts, JSON)
-    Back->>DB: INSERT INTO Accounts (uuid, username, ...)
-    DB-->>Back: ACK + generated UUID
-    Back-->>Front: HTTP 201 Created (JSON Body)
-    Front->>User: Notify Success and Redirect to Login Screen
-```
-### 2. Error by Latency
-```mermaid
-
-sequenceDiagram
-    autonumber
-    actor User
-    participant Front as Frontend (JS)
-    participant Back as Backend (Java/Spring)
-
-    User->>Front: Input registration data
-    Front->>Back: fetch(POST /api/v1/accounts, JSON)
-
-    Note over Front,Back: Request pending (Latency threshold exceeded)
-
-    Front->>Front: Trigger timeout (AbortController)
-    Front-->>User: Display "Server is taking too long to respond. Try again."
-```
-### 3. Data Conflict
-```mermaid
-
-sequenceDiagram
-    autonumber
-    actor User
-    participant Front as Frontend (JS)
-    participant Back as Backend (Java/Spring)
-    participant DB as PostgreSQL
-
-    User->>Front: Input registration data
-    Front->>Back: fetch(POST /api/v1/accounts, JSON)
-    Back->>DB: INSERT INTO Accounts (uuid, username, ...)
-    DB-->>Back: Error: Unique constraint violation
-    Back-->>Front: HTTP 409 Conflict (Error JSON Message)
-    Front-->>User: Display "This username/email is already registered."
-```
-### 4. User Authenticate
-```mermaid
-sequenceDiagram
-    autonumber
-    actor User
-    participant Front as Frontend (JS)
-    participant Back as Backend (Java/Spring)
-    participant DB as PostgreSQL
-
-    User->>Front: Input credentials & click Login
-    Front->>Back: fetch(POST /api/v1/auth/login, JSON)
-    Back->>DB: SELECT FROM Accounts WHERE username = ?
-    DB-->>Back: Account Data
-    Back->>Back: Validate Credentials
-    Back-->>Front: HTTP 200 OK
-    Front->>User: Redirect to Game Dashboard
-```
-### 5. Invalid Credentials
-```mermaid
-sequenceDiagram
-    autonumber
-    actor User
-    participant Front as Frontend (JS)
-    participant Back as Backend (Java/Spring)
-    participant DB as PostgreSQL
-
-    User->>Front: Input wrong credentials
-    Front->>Back: fetch(POST /api/v1/auth/login, JSON)
-    Back->>DB: SELECT FROM Accounts...
-    DB-->>Back: Account not found OR password mismatch
-    Back-->>Front: HTTP 401 Unauthorized (Error Message)
-    Front-->>User: Display "Invalid username or password."
-```
 <h3 align="center">ENTITIES DIAGRAM</h3>
 
 ```mermaid
