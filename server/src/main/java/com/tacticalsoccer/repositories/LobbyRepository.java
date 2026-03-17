@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface LobbyRepository extends JpaRepository {
+public interface LobbyRepository extends JpaRepository<Lobby, Long> {
     Optional<Lobby> findByCode(String code);
 }
